@@ -1,0 +1,434 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body style="font-size: 14px;">
+    <!-- primary nav -->
+    <div class="fixed-top">
+      <div class="d-flex flex-column h-100 py-3 bg-light">
+        <div class="d-flex flex-row border-bottom">
+          <!-- tabs -->
+          <div
+          class="me-3 cursor-pointer small pb-1 px-1 border-2 border-primary text-dark text-muted"
+        >
+          <a href="home.html" class="text-decoration-none text-dark text-muted ms-5">Home</a>
+        </div>
+          <div
+            class="me-3 cursor-pointer small border-2 pb-1 px-1 border-1 border-primary border-bottom text-dark text-muted"
+          >
+            Men
+          </div>
+          <div
+            class="me-3 cursor-pointer small pb-1 px-1 border-2 border-primary text-dark text-muted"
+          >
+            Women
+          </div>
+          <div
+            class="me-3 cursor-pointer small pb-1 px-1 border-2 border-primary text-dark text-muted"
+          >
+            About
+          </div>
+
+          <h5 class="ms-auto"><a href="index.html" class="text-decoration-none text-dark"><b>EVERLANE</b></a></h5>
+          <!-- icons -->
+          <div class="ms-auto d-flex me-5">
+            <p><i class="mx-3 fa-solid fa-magnifying-glass"></i></p>
+            <p><i class="mx-3 fa-regular fa-user"></i></p>
+            <p
+              class=""
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <i class="mx-3 fa-solid fa-cart-shopping">
+                <span class="badge bg-dark" style="font-size: xx-small;">1</span>
+              </i>
+
+            </p>
+            <!-- your cart -->
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-scroll="true"
+              tabindex="-1"
+              id="offcanvasWithBothOptions"
+              aria-labelledby="offcanvasWithBothOptionsLabel"
+              style="width: 35.5%;"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body ms-1">
+                <h4>Your Cart</h4>
+                <!-- cart items -->
+                <div class="d-flex mt-3" >
+                  <img src="https://assets.ajio.com/medias/sys_master/root/20230525/DFcB/646f2adc42f9e729d7c517a0/the-bear-house-green-%26-blue-indian-checked-shirt-with-patch-pocket.jpg" alt="..." 
+                  style="height: 95px; width: 68px;">
+                  <div class="ms-3">
+                      <div class="small">Checked Shirt With Packet</div>
+                      <div class="text-muted small">Large | Black</div>
+                      <div class="small mt-3"><S class="text-muted">$1200</S> $999</div>
+                      <div class="small text-danger">(30% Off)</div>
+                  </div>
+                  <div class="ms-auto">
+                    <i class="fa-regular fa-trash-can py-3 mb-2" style="margin-left: 70px;"></i>
+                    <div class="counter-container border small me-5">
+                      <button id="decrement" class="btn counter-btn">-</button>
+                      <span id="counter">1</span>
+                      <button id="increment" class="btn counter-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <p>Before You Go</p>
+                <div class="d-flex border p-2">
+                  <img src="https://assets.ajio.com/medias/sys_master/root/20230315/pq9t/6411d868aeb26924e3c3f2ed/superdry-grey-beanies-men-vintage-logo-beanie.jpg" alt="..."
+                  style="height: 95px; width: 70px;"
+                  >
+                  <div class="mx-2">
+                    <div>The Good Merino Wool Beanie</div>
+                    <div class="small text-muted">One Size | Chambray Grey</div>
+                    <div class="d-flex mt-2">
+                      <div class="mt-3">$300</div>
+                      <button class="btn btn-dark px-5 ms-auto">Add</button>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- cart footer content -->
+                <div class="offcanvas-bottom py-4 mx-1 overflow-auto" style="margin-top: 56px;">
+                  <div class="mb-4 d-flex">
+                    <div>Subtotal (1 Item)</div>
+                    <div class="ms-auto"><b>$ 1,998</b></div>
+                  </div>
+                  <div class="d-grid gap-2 my-3">
+                    <button class="btn btn-dark p-2 small"><a href="checkout.html" style="text-decoration: none; color: white;">CONTINUE TO CHECKOUT</a></button>
+                  </div>
+                  <div class="d-flex">
+                    <p class="small ms-5 px-5">Psst, get it now before it sells out.</p>
+                    <i class="fa-solid fa-person ms-auto fs-6 border bg-dark text-white p-2" style="border-radius: 50%;"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd nav -->
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="container-fluid justify-content-center border-bottom d-flex bg-light"
+        >
+          <p class="mx-2 px-1 small">Holiday</p>
+          <p class="mx-2 px-1 small">New Arrival</p>
+          <p class="mx-2 px-1 small">Best Sellers</p>
+          <p class="mx-2 px-1 small">Clothing</p>
+          <p class="mx-2 px-1 small">Seraters</p>
+          <p class="mx-2 px-1 small">Jean & Denims</p>
+          <p class="mx-2 px-1 small">Dresses</p>
+          <p class="mx-2 px-1 small">Shoe, Bags & Accessories</p>
+          <p class="mx-2 px-1 small">Sale</p>
+          <!-- <ul class="list-inline text-center">
+          <li class="list-inline-item px-2 small">Week Sale</li>
+          <li class="list-inline-item px-2 small">Holiday</li>
+          <li class="list-inline-item px-2 small">New Arrival</li>
+          <li class="list-inline-item px-2 small">Best Sellers</li>
+          <li class="list-inline-item px-2 small">Clothing</li>
+          <li class="list-inline-item px-2 small">Seraters</li>
+          <li class="list-inline-item px-2 small">Jean & Denims</li>
+          <li class="list-inline-item px-2 small">Dresses</li>
+          <li class="list-inline-item px-2 small">Shoe, Bags & Accessories</li>
+          <li class="list-inline-item px-2 small">Sale</li>
+        </ul> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-0 px-5 mx-5" style="margin-top: 130px;">
+      <div class="col-8">
+        <div class="row g-0">
+          <div class="col">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20230624/iNlz/6496b5ebeebac147fcfbee10/-473Wx593H-465322421-green-MODEL.jpg" alt="..." style="width: 100%;" class="p-1">
+          </div>
+          <div class="col">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20230624/xMX9/6496b5ebeebac147fcfbed9a/-473Wx593H-465322421-green-MODEL3.jpg" alt="..." style="width: 100%;" class="p-1">
+          </div>
+        </div>
+  
+        <div class="row g-0">
+          <div class="col">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20230624/9LrB/6496b5ebeebac147fcfbeda4/-473Wx593H-465322421-green-MODEL2.jpg" alt="..." style="width: 100%;" class="p-1">
+          </div>
+            <div class="col">
+              <img src="https://assets.ajio.com/medias/sys_master/root/20230624/Pv1E/6496b5ebeebac147fcfbeda2/-473Wx593H-465322421-green-MODEL4.jpg" alt="..." style="width: 100%;" class="p-1">
+            </div>
+        </div>
+  
+        <div class="row g-0">
+          <div class="col">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20230624/7Rlv/6496b5ebeebac147fcfbed9d/-473Wx593H-465322421-green-MODEL5.jpg" alt="..." style="width: 100%;" class="p-1">        </div>
+          <div class="col">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20230624/UrEC/6496b5ebeebac147fcfbed9f/-473Wx593H-465322421-green-MODEL6.jpg" alt="..." style="width: 100%;" class="p-1">
+          </div>
+        </div>
+      </div>
+       
+    <div class="col-4">
+
+      <p class="text-muted small px-3">Men / Dress Shirts & Button Downs</p>
+
+                <div class="d-flex">
+                    <p class="fs-4 px-3">Checked Cotton Shirt</p>
+                    <p class="fs-4 ms-2 text-muted"><s>Rs.1200</s></p>
+                    <p class="fs-4 px-3">Rs.999</p>
+                </div>
+
+                <div class="d-flex px-3">
+                  
+                    <i class="fa-solid fa-star small"></i>
+                    <i class="fa-solid fa-star small"></i>
+                    <i class="fa-solid fa-star small"></i>
+                    <i class="fa-solid fa-star small"></i>
+                    <i class="fa-solid fa-star-half-stroke small"></i>    
+                    <p class="text-muted small px-2">4.8 (467 Reviews)</p>
+                </div>
+                <hr class="text-muted">
+
+                <p class="px-3 small"><b class="text-secondary">Color</b> Light Blue / Bellwether Yellow</p>
+                <div class="px-3 fs-2">
+
+                  <i class="fa-solid text-danger fa-circle px-1"></i>
+                  <i class="fa-solid text-info fa-circle px-1"></i>
+                  <i class="fa-solid text-primary fa-circle px-1"></i>
+                  <i class="fa-solid text-success fa-circle px-1"></i>
+                  <i class="fa-solid text-secondary fa-circle px-1"></i>
+
+                </div>
+                <div class="d-flex px-3 justify-content-between">
+                    <p><b class="text-secondary">Size</b></p>
+                    <a href="#" class="text-dark">Size Guide</a>
+                </div>
+                <div class="px-3 btn-group" role="group" aria-label="Size Button">
+                    <button class="btn btn-outline-dark mx-1">XS</button>
+                    <button class="btn btn-outline-dark mx-1">S</button>
+                    <button class="btn btn-outline-dark mx-1">M</button>
+                    <button class="btn btn-outline-dark mx-1">L</button>
+                    <button class="btn btn-outline-dark mx-1">XL</button>
+                    <button class="btn btn-outline-dark mx-1">XXL</button>
+                </div>
+                <div class="d-grid px-3">
+                    <button class="btn btn-dark mt-5 py-2 d-grid"><b>Add To Bag</b></button>
+                </div>
+                <hr class="text-muted mt-4">
+
+                <!-- shiping, return, gift -->
+                <div class="d-flex px-3 ms-2">
+                  <i class="fa-solid fa-truck fs-2 mt-3"></i>
+                  <div class="px-2">
+                      <b>Shipping Discount</b>
+                      <P class="small">Reduced rate express shipping on orders over ₹9999. <a class="text-dark" href="https://support.everlane.com/what-are-your-shipping-methods-and-how-long-do-they-take-Hy1Q2rTRs?_gl=1*1y80aad*_ga*NzQyMzAxMzcxLjE3MDExNTA3MzM.*_ga_WF5LJ1CEFC*MTcwMTM1MDg1Ni42LjEuMTcwMTM1MTg3NC42MC4wLjA.">Learn More.</a></P>
+                 </div>
+              </div>
+  
+              <div class="d-flex px-3 ms-2">
+                  <i class="fa-solid fa-box fs-2 mt-3"></i>
+                  <div class="px-2">
+                      <b>Eazy Returns</b>
+                      <P class="small">Return within 60 days of purchase Duties & taxes are non-refundable. <a class="text-dark" href="https://support.everlane.com/what-is-your-return-policy-H1fMnra0s?_gl=1*1wzqhub*_ga*NzQyMzAxMzcxLjE3MDExNTA3MzM.*_ga_WF5LJ1CEFC*MTcwMTM1MDg1Ni42LjEuMTcwMTM1MTg3NC42MC4wLjA.">Returns Details.</a></P>
+                 </div>
+              </div>
+  
+              <div class="d-flex px-3 ms-2">
+                  <i class="fa-solid fa-gift fs-2 mt-3"></i>
+                  <div class="p-2">
+                      <b>Send It As A Gift</b>
+                      <P class="small">Add a free personalized note during checkout.
+                      </P>
+                 </div>
+              </div>
+              <hr class="text-muted">
+              <div class="px-3 ms-2">
+                  <h6>Our Brushed Flannel Shirt is warm, durable, and made for supreme comfort.</h6>
+                  <p class="small">Our flannel fabric is a 5.8 oz cotton that’s brushed on both sides for a soft-but-abrasion-resistant finish.</p>
+              </div>
+              <div class="d-flex small ms-2">
+                  <p class="px-3"><b>Fit</b></p>
+                  <div>
+                      <p class="mx-3 px-5">Slim Fit</p>
+  
+                  </div>
+              </div>
+              <div class="mx-5 px-5 small ms-5">
+                  <p class="px-4">Questions about fit? <br><a class="text-dark" href="#">Contact Us</a><br>
+                      <a href="#" class="text-dark">Size Guide</a></p>  
+              </div>
+              <hr class="text-muted">
+
+              <div class="d-flex px-3 small ms-2">
+                <p class=""><b>Materials</b></p>
+                <div>
+                    <p class="mx-3 px-1">
+                      Body/Neck Opening: 100% Cashmere, Cuffs: 95% Cashmere, 1% Elastane, 4% Other Fibers, Bottom: 90% Cashmere, 9% Nylon, 1% Elastane</p>
+                </div>
+              </div>
+              <hr class="text-muted">
+
+              <div class="d-flex px-3 py-2 small ms-2">
+                <p class=""><b>Care</b></p>
+                <div>
+                    <p class="mx-5 px-1">
+                      Machine wash cold with like colors only. Non-chlorine bleach when needed. Tumble dry low. Warm iron when needed.
+                </div>
+              </div>
+              <hr class="text-muted">
+
+              <div class="d-flex py-2 px-3 small ms-2">
+                <p class=""><b>Details</b></p>
+                <div>
+                    <p class="mx-4 px-3">
+                      Made at Global Promise in China.
+                </div>
+              </div>
+              <hr class="text-muted">
+
+              <p class="px-3 py-2 small ms-2"><b>Less Detail</b> <i class="fa-solid fa-angle-up"></i></p>
+
+    </div>
+
+    </div>
+
+    <div class="container my-5 pt-5 px-5">
+      <h6>Recomended Products</h6>
+      <div class="row g-0">
+        <div class="col">
+          <div class="card border-0 mb-3">
+            <img
+              src="https://assets.ajio.com/medias/sys_master/root/20230624/C2Rg/64965e34eebac147fcf14d97/dragon-hill-white-classic-full-sleeve-spread-collar-shirt.jpg"
+              alt="..."
+              class="card-img-top"
+              style="height: 265px; width: 217px;"
+            />
+            <div class="card-text">
+              <ul class="list-inline">
+                <li class="list-inline-item text-muted small">
+                  White Shirt
+                </li>
+                <li class="list-inline-item text-muted small ms-4">
+                  <s>Rs.1200</s>
+                </li>
+                <li class="list-inline-item small">Rs.999</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 mb-3">
+            <img
+              src="https://assets.ajio.com/medias/sys_master/root/20221205/nUtf/638e1786aeb269659cd16a4a/levis-green-classic-micro-print-cotton-shirt.jpg"
+              alt="..."
+              class="card-img-top"
+              style="height: 265px; width: 217px;"
+            />
+            <div class="card-text">
+              <ul class="list-inline">
+                <li class="list-inline-item text-muted small">
+                  Green Shirt
+                </li>
+                <li class="list-inline-item text-muted small ms-4">
+                  <s>Rs.1200</s>
+                </li>
+                <li class="list-inline-item small">Rs.999</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 mb-3">
+            <img
+              src="https://assets.ajio.com/medias/sys_master/root/20230628/41yE/649b5c75a9b42d15c9fb52d8/the-bear-house-multicoloured-indian-men-checked-slim-fit-shirt-with-patch-pocket.jpg"
+              alt="..."
+              class="card-img-top"
+              style="height: 265px; width: 217px;"
+            />
+            <div class="card-text">
+              <ul class="list-inline">
+                <li class="list-inline-item text-muted small">
+                  Faded Shirt
+                </li>
+                <li class="list-inline-item text-muted small ms-4">
+                  <s>Rs.1200</s>
+                </li>
+                <li class="list-inline-item small">Rs.999</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 mb-3">
+            <img
+              src="https://assets.ajio.com/medias/sys_master/root/20230628/XDyj/649b7a51eebac147fc15de81/the-bear-house-multicoloured-indian-men-checked-slim-fit-shirt-with-patch-pocket.jpg"
+              alt="..."
+              class="card-img-top"
+              style="height: 265px; width: 217px;"
+            />
+            <div class="card-text">
+              <ul class="list-inline">
+                <li class="list-inline-item text-muted small">
+                  Boxy Shirt
+                </li>
+                <li class="list-inline-item text-muted small ms-4">
+                  <s>Rs.1200</s>
+                </li>
+                <li class="list-inline-item small">Rs.999</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>           
+      </div>
+    </div>
+    
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>
+
+
+
+
+
+
+<!-- https://assets.ajio.com/medias/sys_master/root/20230624/iNlz/6496b5ebeebac147fcfbee10/-473Wx593H-465322421-green-MODEL.jpg
+https://assets.ajio.com/medias/sys_master/root/20230624/9LrB/6496b5ebeebac147fcfbeda4/-473Wx593H-465322421-green-MODEL2.jpg
+https://assets.ajio.com/medias/sys_master/root/20230624/xMX9/6496b5ebeebac147fcfbed9a/-473Wx593H-465322421-green-MODEL3.jpg
+https://assets.ajio.com/medias/sys_master/root/20230624/Pv1E/6496b5ebeebac147fcfbeda2/-473Wx593H-465322421-green-MODEL4.jpg
+https://assets.ajio.com/medias/sys_master/root/20230624/7Rlv/6496b5ebeebac147fcfbed9d/-473Wx593H-465322421-green-MODEL5.jpg
+https://assets.ajio.com/medias/sys_master/root/20230624/UrEC/6496b5ebeebac147fcfbed9f/-473Wx593H-465322421-green-MODEL6.jpg -->

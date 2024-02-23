@@ -1,0 +1,315 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-light h-100" style="font-size: 14px;">
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-white fixed-top">
+      <a href="index.html" class="navbar-brand mx-auto"><b>EVERLANE</b></a>
+    </nav>
+
+    <div class="mt-5 pt-4 d-flex mx-5 px-4 h-100">
+      <div class="col-8 overflow-scroll h-100">
+        <!-- EMAIL ENTERING -->
+        <div class="row bg-white me-2">
+          <div class="pt-4 px-5">
+            <span
+              class="bg-dark text-white px-2 mx-3"
+              style="border-radius: 50%; font-size: large"
+              >1</span
+            ><b>Enter Your Email</b>
+          </div>
+          <div class="small mx-5 px-5">
+            Already have an account? <a href="#" class="text-dark">Log In</a>
+          </div>
+
+          <input
+            type="email"
+            class="form-control bg-light w-75 mt-3 mx-auto py-3 border-0 mb-3"
+            placeholder="Email Address*"
+          />
+          <div class="text-muted small mx-5 px-5 mb-4 pb-1">
+            By providing your email, you agree to our
+            <a href="#" class="text-dark small text-muted"> Privacy Policy</a>
+            and
+            <a href="#" class="text-dark small text-muted">
+              Terms of Service.</a
+            >
+          </div>
+          <button
+            class="btn btn-dark btn-block w-75 h-15 py-2 mb-3"
+            style="margin-left: 100px"
+          >
+            CONTINUE TO SHIPPING
+          </button>
+          <div class="form-check px-5 mx-5 small mb-5">
+            <input
+              name="mailingList"
+              type="checkbox"
+              class="form-check-input fs-6 ms-2"
+              value="true"
+              checked=""
+            />
+            <label class="form-check-label px-2" for="mailingList"
+              >Join our newsletter and receive 15% off your first full price
+              purchase.</label
+            >
+          </div>
+        </div>
+
+        <!-- SHIPPING  -->
+        <div class="row bg-white my-2 me-2">
+          <!-- <div class="col-12 d-flex flex-column align-content-center justify-content-center"></div> -->
+          <div class="pt-4 px-5">
+            <span
+              class="bg-dark text-white px-2 mx-3"
+              style="border-radius: 50%; font-size: large"
+              >2</span
+            ><b>Shipping</b>
+          </div>
+          <form>
+            <input
+              type="email"
+              class="form-control bg-light my-3 w-50 mx-auto py-3 border-0 mb-3"
+              placeholder="Full Name*"
+            />
+            <input
+              type="email"
+              class="form-control bg-light my-3 w-50 mx-auto py-3 border-0 mb-3"
+              placeholder="India"
+            />
+            <input
+              type="email"
+              class="form-control bg-light my-3 w-50 mx-auto py-3 border-0 mb-3"
+              placeholder="Street Address*"
+            />
+            <input
+              type="email"
+              class="form-control bg-light my-3 w-50 mx-auto py-3 border-0 mb-3"
+              placeholder="Apartment, Suite, Building (Optional)"
+            />
+            <input
+              type="email"
+              class="form-control bg-light my-3 w-50 mx-auto py-3 border-0 mb-3"
+              placeholder="City*"
+            />
+
+            <div class="d-flex justify-content-center">
+              <div class="col-4">
+                <input
+                  type="email"
+                  class="form-control bg-light my-3 py-3 border-0 mb-3"
+                  placeholder="State/Province/Region"
+                />
+              </div>
+              <div class="col-4 mx-2">
+                <input
+                  type="email"
+                  class="form-control bg-light my-3 py-3 border-0 mb-3"
+                  placeholder="Postal Code*"
+                />
+              </div>
+            </div>
+            <input
+              type="email"
+              class="form-control bg-light my-3 w-50 mx-auto py-3 border-0 mb-3"
+              placeholder="Phone Number*"
+            />
+          </form>
+          <button
+            class="btn btn-dark btn-block w-50 mx-auto h-15 py-2 mb-3"
+            style="margin-left: 100px"
+          >
+            SEE SHIPPING OPTIONS
+          </button>
+        </div>
+
+        <!-- PAYMENT METHOD -->
+        <div class="row bg-white me-2">
+          <div class="pt-4 px-5">
+            <span
+              class="bg-dark text-white px-2 mx-3"
+              style="border-radius: 50%; font-size: large"
+              >3</span
+            ><b>Payment Method</b>
+          </div>
+          <div class="small mx-5 px-5">
+            All transactions are secure and encrypted.
+          </div>
+
+          <div class="card w-75 mx-auto my-2">
+            <div class="card-header d-flex">
+              <div>
+                <i class="fa-solid fa-circle-dot text-primary pe-2"></i>Credit
+                Card
+              </div>
+              <div class="d-flex ms-auto">
+                <i class="fa-brands fa-cc-visa mx-1 fs-3 text-primary"></i>
+                <i class="fa-brands fa-cc-amex mx-1 fs-3 text-primary"></i>
+                <i
+                  class="fa-brands fa-cc-mastercard mx-1 fs-3 text-warning bg-dark"
+                ></i>
+              </div>
+            </div>
+            <div class="card-body text-muted d-flex">
+              <div class="">
+                <i class="fa-solid fa-lock small pe-2"></i>
+                Card Number
+              </div>
+              <div class="mx-auto">MM / YY</div>
+              <div class="ms-auto">CVC</div>
+            </div>
+          </div>
+          <hr class="w-75 mx-auto my-3" />
+
+          <div class="small ms-5 px-5">
+            <i class="fa-solid fa-circle-dot text-primary pe-2 fs-6"></i>
+            <b>Same as Shipping</b>
+          </div>
+          <div class="small mx-5 px-5">
+            <div class="mx-4">No:15, New Street, Velachery</div>
+            <div class="mx-4">Chennai, 600042</div>
+          </div>
+          <div class="small my-2 ms-5 px-5 mb-4">
+            <i class="fa-regular fa-circle pe-2 fs-6"></i>
+            <b>New Billing Address</b>
+          </div>
+          <button
+            class="btn btn-dark btn-block w-75 h-15 py-2 mb-3 mb-4"
+            style="margin-left: 100px"
+          >
+            REVIEW ORDER
+          </button>
+          <hr class="w-75 mx-auto my-3" />
+        </div>
+      </div>
+
+      <div class="col-4 mx-2 bg-white overflow-scroll h-100">
+
+        <div class="d-flex m-4">
+            <i class="fa-solid fa-cart-shopping fs-5"></i>
+            <span><b>Cart (1)</b></span
+            ><i
+              class="fa-solid fa-circle text-success m-2"
+              style="font-size: x-small"
+            ></i>
+          <div class="ms-auto">$ 999.80</div>
+        </div>
+
+        <!-- img  -->
+        <div class="d-flex my-4 ms-1">
+          <img
+            src="https://assets.ajio.com/medias/sys_master/root/20230525/DFcB/646f2adc42f9e729d7c517a0/the-bear-house-green-%26-blue-indian-checked-shirt-with-patch-pocket.jpg"
+            alt="..."
+            style="height: 95px; width: 68px"
+          />
+          <div class="ms-3">
+            <div class="small">Checked Shirt With Packet</div>
+            <div class="text-muted small">Large | Black</div>
+            <div class="small mt-3"><s class="text-muted">$1200</s> $999</div>
+            <div class="small text-danger">(30% Off)</div>
+          </div>
+          <div class="ms-auto">
+            <i
+              class="fa-regular fa-trash-can py-3 mb-2"
+              style="margin-left: 70px"
+            ></i>
+            <div class="counter-container border small me-5">
+              <button id="decrement" class="btn counter-btn">-</button>
+              <span id="counter">1</span>
+              <button id="increment" class="btn counter-btn">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group my-2 px-4">
+          <input
+            type="text"
+            class="form-control bg-light py-2"
+            placeholder="Apply Coupon"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary py-2">Apply</button>
+          </div>
+        </div>
+        <hr />
+        <!-- gross total  -->
+        <div class="px-4 small my-4">
+          <div class="d-flex">
+            <div>Subtotal</div>
+            <div class="ms-auto">$ 999</div>
+          </div>
+          <div class="d-flex">
+            <div>Duties</div>
+            <div class="ms-auto">$ 100</div>
+          </div>
+          <div class="d-flex">
+            <div>Estimated Tax</div>
+            <div class="ms-auto">$ 100</div>
+          </div>
+          <div class="d-flex">
+            <div>Estimated Shipping</div>
+            <div class="ms-auto">Free</div>
+          </div>
+          <div class="d-flex">
+            <div><b>Total</b></div>
+            <div class="ms-auto"><b>$ 1,199</b></div>
+          </div>
+          <div class="d-flex px-3 bg-warning-subtle py-2 mx-2 my-3">
+            <div class="mx-2">
+              <img
+                src="data:image/png;base64,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"
+                alt="..."
+                style="height: 25px; width: 25px"
+              />
+            </div>
+            <div class="small">
+              Duties, Tax, and Shipping are estimated totals until shipping step
+              is complete.
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <div class="px-3"><b>Save Your Info</b> (Optional)</div>
+        <div class="small text-muted px-2 ms-2 my-2">
+          Create a password for easy order review and faster checkout the next
+          time you shop.
+        </div>
+
+        <div class="mx-3 my-2">
+          <input
+            type="password"
+            class="form-control py-3"
+            id="exampleInputPassword1"
+            placeholder="Enter Password"
+          />
+        </div>
+
+        <div class="mx-3 my-5">
+          <button class="btn btn-secondary btn-block w-100 h-15 py-2 mb-3">
+            PLACE ORDER
+          </button>
+          <div class="small ms-5 px-4"><b>Psst, get it now before it sells out.</b></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>

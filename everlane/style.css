@@ -1,0 +1,124 @@
+.dot{
+    width: 50px;
+      height: 50px;
+      background-color: #3498db; /* Set your desired background color */
+      border-radius: 50%; /* Make it a circle */
+      display: inline-block;
+      margin-right: 10px; /* Optional margin for spacing */
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+}
+/* Add these styles to your CSS or SCSS file */
+
+.search-bar {
+  border-radius: 20px;
+}
+
+/* Arrow */
+.fa-angle-down {
+  font-size: small;
+  color: black;
+}
+
+.mega-menu-dropdown .fa-angle-up {
+  display: none;
+}
+
+.mega-menu-dropdown:hover .fa-angle-down {
+  display: none;
+}
+
+.mega-menu-dropdown:hover .fa-angle-up {
+  display: inline-block;
+  font-size: small;
+  color: black;
+}
+
+/*  */
+.mega-menu-dropdown-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+}
+
+.mega-menu-dropdown:hover .mega-menu-dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  z-index: 2;
+  right: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.mega-menu-dropdown-anchor:hover {
+  border-bottom: 2px solid #000; /* You can adjust the color and thickness as needed */
+}
+
+/* dots  and text-colour*/
+.list {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+}
+.text-colour {
+  color: #656565;
+}
+
+/* icons */
+
+.twitter-icons:hover {
+  color: white;
+  background-color: #1da1f2;
+  border-radius: 25px;
+}
+.facebook-icons:hover {
+  color: #ffffff;
+  background-color: #1877f2;
+  border-radius: 25px;
+}
+
+.youtube-icons:hover {
+  color: white;
+  background-color: #cd201f;
+  border-radius: 25px;
+}
+.instagram-icons:hover {
+  color: white;
+  background-color: #833ab4;
+  border-radius: 25px;
+}
+/* buttons */
+.button {
+  background-color: black;
+  color: #fff;
+  border: none;
+}
+
+.centered-button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.header {
+  font-weight: 700;
+  color: #000;
+  font-size: 12px;
+}
+
+.submenu {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
